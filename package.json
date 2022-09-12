@@ -1,0 +1,44 @@
+{
+	"name": "ssh-terminal-tool",
+	"displayName": "SSH tool for VSCode",
+	"description": "SSH tool for remote connections",
+	"version": "0.0.1",
+	"publisher": "ericzhu",
+	"repository": "https://github.com/Microsoft/vscode-extension-samples/helloworld-sample",
+	"engines": {
+		"vscode": "^1.34.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "sshTool.openConnectTerminal",
+				"title": "Open SSH Terminal"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^16.11.7",
+		"@types/vscode": "^1.34.0",
+		"@typescript-eslint/eslint-plugin": "^5.30.0",
+		"@typescript-eslint/parser": "^5.30.0",
+		"eslint": "^8.13.0",
+		"typescript": "^4.7.2"
+	},
+	"dependencies": {
+		"@types/ssh2": "^1.11.5",
+		"ssh2": "^1.11.0"
+	}
+}
