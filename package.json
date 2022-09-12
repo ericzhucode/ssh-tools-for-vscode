@@ -1,7 +1,7 @@
 {
 	"name": "ssh-terminal-tool",
 	"displayName": "SSH tool for VSCode",
-	"description": "SSH tool for remote connections",
+	"description": "VSCode extension for ssh remote connection",
 	"version": "0.0.1",
 	"publisher": "ericzhu",
 	"repository": "https://github.com/Microsoft/vscode-extension-samples/helloworld-sample",
